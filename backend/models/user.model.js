@@ -25,7 +25,8 @@ const userSchema = new Schema({
         type : String ,
         default : ""
     }
-})
+    // createdAt , updatedAt
+}, {timestamps: true})
 
 const User = model("User", userSchema);
 
