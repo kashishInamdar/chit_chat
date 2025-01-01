@@ -3,7 +3,7 @@ import {Schema , model} from "mongoose";
 const messageSchema = new Schema({
     senderId : {
         type: Schema.Types.ObjectId,
-        ref : "User",
+        ref : "User", 
         required : true
     },
     receiverId : {

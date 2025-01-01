@@ -37,7 +37,7 @@ export const Login = () => {
                             className='w-full input input-bordered h-10'
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)} // Properly call setUserName
-                        />
+                        />                                                
                     </div>
                     <div>
                         <label className='label '>
