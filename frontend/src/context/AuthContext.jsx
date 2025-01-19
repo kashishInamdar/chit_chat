@@ -1,4 +1,6 @@
+
 import { createContext,useContext, useState } from "react";
+
 
 export const AuthContext = createContext();
 export const useAuthContext = ()=>{
@@ -6,6 +8,8 @@ export const useAuthContext = ()=>{
 }
 
 export const AuthContextProvider = ({ children })=>{
+    const [displayMessageBox , setDisplayMessageBox ] = useState(false);
+
     const [authUser, setAuthUser] = useState(JSON.parse(localStorage.getItem("chat-user"))|| null );
 
     return(
