@@ -12,9 +12,9 @@ const Sidebar = ()=>{
       }, [setSelectedConversation]);
     
     return(
-        <div className={`border-r border-slate-500 p-4 sm:flex sm:flex-col  ${selectedConversation ? "hidden" : ""} `}>
+        <div className={`border-r border-slate-500  p-4 sm:flex sm:flex-col sm:w-[25vw] ${selectedConversation ? "hidden" : ""} `}>
             <SearchInput />
-            <div className="divider px-3"> </div>
+            <div className="sm:divider sm:px-3"> </div>
            <Conversations /> 
             <LogoutButton />
             

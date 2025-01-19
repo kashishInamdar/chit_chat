@@ -7,7 +7,7 @@ const Conversations = () => {
   const { loading, conversations = [] } = useGetConversations(); // Ensure default value for conversations
 
   return (
-    <div className='py-2 flex flex-col overflow-auto'>
+    <div className='sm:py-2 my-2 flex flex-col sm:overflow-auto h-[74vh] overflow-scroll'>
       {Array.isArray(conversations) && conversations.map((conversation, idx) => (
         <Conversation
           key={conversation._id}

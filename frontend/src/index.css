@@ -10,6 +10,8 @@ body{
     background-attachment: fixed;
     scrollbar-width: thin; /* Thin scrollbar */
     scrollbar-color: #121212 #555;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 /* Dark mode looking scrollbar */

@@ -17,7 +17,7 @@ function Message({message }) {
 
   return (
     <div className={`chat ${chatClassName}`}>
-        <div className="chat-image avatar ">
+        <div className="sm:chat-image sm:avatar hidden ">  
             <div className="w-10 rounded-full ">
                 <img alt="tailwind css chat buvvle "
                   src={profilePic}
@@ -25,7 +25,7 @@ function Message({message }) {
                 />
             </div>
         </div>
-        <div className={`chat-bubble text-white ${bubbuleBgColor} ${shakeClass} pb-2`} >{message.message}</div>
+        <div className={`chat-bubble text-white sm:text-[17px] text-[13px] ${bubbuleBgColor} ${shakeClass} pb-2`} >{message.message}</div>
         <div className='chat-footer  opacity-50 text-xs flex gap-1 items-center'>{formattedTime}</div>
 
     </div>
