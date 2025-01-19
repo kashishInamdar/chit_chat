@@ -8,7 +8,7 @@ const SearchInput = () => {
 	const [search, setSearch] = useState("");
 	const { setSelectedConversation } = useConversation();
 	const { conversations } = useGetConversations();
-
+ 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if (!search) return;

@@ -16,7 +16,7 @@ function MessageContainer() {
 
   return (
     <div
-      className={`sm:w-[70vw] w-fit px-2 sm:flex sm:flex-col  ${
+      className={`sm:w-[70vw] w-[95vw]  sm:px-2 sm:flex sm:flex-col  ${
         selectedConversation ? "" : "hidden"
       }`}>
       {!selectedConversation ? (
