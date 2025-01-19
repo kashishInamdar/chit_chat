@@ -15,7 +15,7 @@ function Messages() {
     },100);
   },[messages])
   return (
-    <div className='px-2 sm:px-4 h-[78vh] flex-1 sm:overflow-auto overflow-scroll  '>
+    <div className='px-2 sm:px-4 h-[75vh] flex-1 sm:overflow-auto overflow-scroll  '>
       {!loading && messages.length > 0 && 
       messages.map((message)=>(
         <div key={message._id} ref={lastMessageRef} >
